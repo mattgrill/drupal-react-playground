@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <!-- setup code -->
+  <script>
+    window.Drupal = { templates: {} }
+  </script>
+
+  <!-- load react -->
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+  <!-- external babel helpers -->
+  <script src="helpers.js"></script>
+
+  <!-- template overrides, idealy provided by modules or themes, or whatever -->
+  <script src="overrides-app.js"></script>
+
+  <!-- previous templates are injected here and replace the basic ones -->
+  <script src="templates.js"></script>
+
+  <!-- app shell code and rendering happens here -->
+  <script src="index.js"></script>
+</html>
